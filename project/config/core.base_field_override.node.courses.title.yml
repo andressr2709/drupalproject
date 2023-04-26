@@ -1,0 +1,18 @@
+uuid: a32eaa37-ce28-4501-9a86-690ecf03d647
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.courses
+id: node.courses.title
+field_name: title
+entity_type: node
+bundle: courses
+label: 'Course name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
