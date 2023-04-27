@@ -1,0 +1,29 @@
+uuid: d75c8aa3-ecf7-416d-a19c-251e68baef4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_category
+    - node.type.courses
+    - taxonomy.vocabulary.courses_first_year
+id: node.courses.field_category
+field_name: field_category
+entity_type: node
+bundle: courses
+label: Year
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      courses_first_year: courses_first_year
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

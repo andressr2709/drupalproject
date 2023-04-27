@@ -1,0 +1,8 @@
+uuid: 250bc500-fc57-4fe5-8d29-be28ed8ea8ce
+langcode: en
+status: true
+dependencies: {  }
+name: 'Course Year'
+vid: courses_first_year
+description: 'All the courses according to the year.'
+weight: 0
