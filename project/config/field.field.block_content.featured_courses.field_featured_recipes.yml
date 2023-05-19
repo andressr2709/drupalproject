@@ -1,0 +1,29 @@
+uuid: bf0a0432-d5f6-49fe-ba54-6db469ef2fe6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.featured_courses
+    - field.storage.block_content.field_featured_recipes
+    - node.type.courses
+id: block_content.featured_courses.field_featured_recipes
+field_name: field_featured_recipes
+entity_type: block_content
+bundle: featured_courses
+label: 'Featured recipes'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      courses: courses
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

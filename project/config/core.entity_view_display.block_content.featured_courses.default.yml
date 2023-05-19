@@ -1,0 +1,21 @@
+uuid: c6eaa955-ebb2-4e2d-84b7-e9051704eca8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.featured_courses
+    - field.field.block_content.featured_courses.field_featured_recipes
+id: block_content.featured_courses.default
+targetEntityType: block_content
+bundle: featured_courses
+mode: default
+content:
+  field_featured_recipes:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

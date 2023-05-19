@@ -1,0 +1,33 @@
+uuid: eccab6d6-d0c9-4d97-81ca-8dd3268f5afe
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:more:f62226c6-7fa3-46fe-8bcd-a2fa8459463b'
+  module:
+    - block_content
+    - node
+  theme:
+    - olivero
+id: more
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'block_content:f62226c6-7fa3-46fe-8bcd-a2fa8459463b'
+settings:
+  id: 'block_content:f62226c6-7fa3-46fe-8bcd-a2fa8459463b'
+  label: more
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      courses: courses

@@ -1,0 +1,33 @@
+uuid: af77d247-daec-4837-a286-3d24458eb067
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:featured_courses:e4fbbf18-022a-40a2-bcd6-ed538b66d702'
+  module:
+    - block_content
+    - node
+  theme:
+    - olivero
+id: morecourses
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'block_content:e4fbbf18-022a-40a2-bcd6-ed538b66d702'
+settings:
+  id: 'block_content:e4fbbf18-022a-40a2-bcd6-ed538b66d702'
+  label: 'More courses'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      courses: courses
